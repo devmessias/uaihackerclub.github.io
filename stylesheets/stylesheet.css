@@ -33,10 +33,7 @@ header #cmd {
   -webkit-font-smoothing: antialiased;
 }
 
-header #cmd:before {
-  content: "./ ";
-  font-size: 30px;
-}
+
 
 
 @-webkit-keyframes 'blink' {
