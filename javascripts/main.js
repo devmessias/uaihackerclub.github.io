@@ -10,7 +10,7 @@ function type(el, text, pos, no) {
   if (pos == text.length) {
     $(el).html(text + cursor);
   } else {
-    window.setTimeout('type("' + el + '","' + text + '",' + (pos + 1) + ',' + 1 + ');', 70);
+    window.setTimeout('type("' + el + '","' + text + '",' + (pos + 1) + ',' + 1 + ');', 150);
   }
 }
 $(document).ready(function() {
