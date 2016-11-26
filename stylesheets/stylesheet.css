@@ -7,7 +7,45 @@ body {
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
+#cmd {
+  font-size:30px;
+}
+#cmd span{
+	font-size: 65px;
+	position: absolute;
+	top:-15px;
 
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: blink;
+  -webkit-animation-timing-function: ease;
+}
+header #cmd {
+
+  font-weight: bold;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #b5e853;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+header #cmd:before {
+  content: "./ ";
+  font-size: 30px;
+}
+
+
+@-webkit-keyframes 'blink' {
+    0% { opacity:0 }
+    25% { opacity:1 }
+    50% { opacity: 1 }
+    75% { opacity: 1 }
+    100% { opacity: 0 }
+}
 /* General & 'Reset' Stuff */
 
 .container {
@@ -43,24 +81,6 @@ header {
   margin: 0 0 40px 0;
 }
 
-header h1 {
-  font-size: 30px;
-  line-height: 1.5;
-  margin: 0 0 0 -40px;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
-}
-
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
-}
 
 header h2 {
   font-size: 18px;
